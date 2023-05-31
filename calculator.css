@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: powderblue;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 20%;
+  height: 55vh;
+  margin-top: 10em;
+  background-color: white;
+}
+
+.input-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+input {
+  width: 90%;
+  height: 10vh;
+  background-color: palevioletred;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 0.5em;
+  border: none;
+  border-radius: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.num-btns {
+  width: 90%;
+  height: 35vh;
+  display: grid;
+  margin-left: 1em;
+}
+
+button {
+  border-radius: 50%;
+  width: 20%;
+  height: 7vh;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+}
+
+#del-btn {
+  background-color: palevioletred;
+}
+
+.calc-btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main {
+    width: 85%;
+    height: 65vh;
+    margin-top: 5em;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    width: 70%;
+    height: 58vh;
+    margin-top: 8em;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    width: 50%;
+    height: 53vh;
+    margin-top: 12em;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .main {
+    width: 45%;
+    height: 52vh;
+    margin-top: 15em;
+    background-color: white;
+  }
+}
